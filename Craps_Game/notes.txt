@@ -1,0 +1,5 @@
+okay so craps is a betting game 
+
+
+- we'll be using a dice so obviously using the dice function 
+- players make "bets" and then the dice rolls then whatever blah
