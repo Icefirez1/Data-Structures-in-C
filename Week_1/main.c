@@ -6,6 +6,8 @@
 #include "sorting.h"
 #include "8_25.h"
 
+//# is a preprocessor directive
+
 void bubblesort(int a[], int n);
 void selectionsort(int a[], int n);
 void insertionsort(int a[], int n);

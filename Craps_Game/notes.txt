@@ -3,3 +3,12 @@ okay so craps is a betting game
 
 - we'll be using a dice so obviously using the dice function 
 - players make "bets" and then the dice rolls then whatever blah
+
+/*
+Craps
+Roll 2d6 
+If 7 or 11, player wins
+Else if 2, 3, or 12 player loses 
+Else, record the sums as the players point
+Continue rolling until the player makes their "point" and wins or rolls a 7
+*/
