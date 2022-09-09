@@ -1,0 +1,21 @@
+okay so craps is a betting game 
+
+
+- we'll be using a dice so obviously using the dice function 
+- players make "bets" and then the dice rolls then whatever blah
+
+/*
+Craps
+Roll 2d6 
+If 7 or 11, player wins
+Else if 2, 3, or 12 player loses 
+Else, record the sums as the players point
+Continue rolling until the player makes their "point" and wins or rolls a 7
+*/
+
+Write a program that plays 1000 games of craps. Seed the random number generator with 42. Use switch-case for the different rolls and enumeration for the game states . You will need to keep track of wins and losses and how many rolls until the game ended. Then, print out:
+
+The chances of winning to 2 decimal places.
+
+The average length of a game to 2 decimal places. Count the length of a game in the for-loop header.
+

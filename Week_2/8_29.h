@@ -44,18 +44,7 @@ int max(int a, int b, int c)
 
 }
 
-int factorial_recursive(int n)
-{
-    if (n < 2)
-    {return 1;}
-    return n * factorial_recursive(n-1);
-}
 
-int factorial_iterative(int n)
-{
-    end = 1;
-    for(int i = n)
-}
 
 int main_8_29(void)
 {
@@ -64,7 +53,6 @@ int main_8_29(void)
 
     printf("%d\n", max(4,10,12));
 
-    printf("%d\n", factorial_recursive(4));
 
     return 0;
 }
