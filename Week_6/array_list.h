@@ -11,6 +11,9 @@ typedef struct arraylist
 
 ArrayList *create_al ();
 void destroy_al(ArrayList *listPtr);
+void print_al(ArrayList list);
+void insert_al(int value, ArrayList *listPtr);
+void print_al(ArrayList list);
 
 int main_al(int argc, char *argv[])
 {
@@ -36,4 +39,35 @@ void destroy_al(ArrayList *listPtr)
     free(listPtr);
 
 }
+
+void print_al(ArrayList list)
+{
+    for(size_t i = 0; i <list.size; i++)
+    {
+        printf("%d,", list.array[i]);
+    }
+    puts("")
+}
+
+void insert_al(int value, ArrayList *listPtr)
+{
+  
+    size_t i;
+    for (i = (listPtr->size)++; i != 0 && listPtr->array[i-1] >= value; --i)
+    {
+        listPtr->array[i] = listPtr->[i-1];
+    }
+    listPtr->array[i] = value;
+
+}
+
+void resizeiffulle(ArrayList *listPtr)
+{
+    if(listPtr -> size == listPtr -> capacity)
+    {
+        listPtr->capacity *=2; 
+        listPtr-> = realloc(listPtr->array,listPtr->capacity*sizeof(int));
+    }
+}
+
 
