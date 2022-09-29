@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "cmath": "c",
+        "stdio.h": "c",
+        "dice.h": "c",
+        "craps.h": "c",
+        "string.h": "c",
+        "9_8.H": "cpp",
+        "stdbool.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}

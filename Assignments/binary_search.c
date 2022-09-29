@@ -19,9 +19,11 @@ int main(int argc, char **argv)
     // print_array(arr, n);
 
     printf("Binary Search on element inside list (300), index: %d\n", bin_search(arr,n, 300));
+        printf("Binary Search on element inside list (420), index: %d\n", bin_search(arr,n, 420));
     printf("Binary Search on element ouside list (1), index: %d\n", bin_search(arr,n, 1));
     printf("Binary Search on element ouside list (4000), index: %d\n", bin_search(arr,n, 4000));
     printf("Binary Search on element not in list (3), index: %d\n", bin_search(arr,n, 3));
+    printf("Binary Search on element not in list (69), index: %d\n", bin_search(arr,n, 69));
 
 
     return 0; 
