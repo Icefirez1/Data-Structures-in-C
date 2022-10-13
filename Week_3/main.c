@@ -13,6 +13,21 @@ int main(int argc, char **argv)
 {
     //printf("Hello World\n");
 
-    main_9_15(argc, argv)[];
+    // main_9_15(argc, argv)[];
+    int test = 0;
+    int *ptr = &test; 
+    printf("%d\n", *&ptr);
+    printf("%d\n", &*ptr);\
+    int arr[] = {1,2,3,4,5};
+    printf("%d\n", arr+1);
+    char str[] = "yuh";
+    printf("%c", str[3]);
+
+    int i = 0;
+    for(;;)
+    {
+        printf("%d\n", 3);
+    }
+    printf("akjdsl");
     return 0; 
 }

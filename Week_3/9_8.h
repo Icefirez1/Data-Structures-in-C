@@ -17,7 +17,6 @@ void print_size_of_more(int **arr)
     
 }
 
-+654
 
 int main_9_8(int argc, char **argv)
 {
