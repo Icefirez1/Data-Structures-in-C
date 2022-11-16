@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     printf("Coin flips %d times and 0 was flipeed %d times\n", flips, coin(flips));
 
     //number 2
-    int die_num = 4;
+    int die_num = 10;
     printf("Times it took for %d die to be da same is %d rolls\n", die_num, all_dice(die_num));
 
     //number 3
@@ -154,3 +154,33 @@ bool palindrome(char string[], int start, int end)
     {return palindrome(string, start + 1, end -1);}
     return true;
 }
+
+
+// double decimal_maker(char *arr)
+// {
+//     int dec_index;
+//     double num;
+//     for (size_t i = 0; i < strlen(arr); i++) 
+//     {
+//         if(arr[i] == '.')
+//         {dec_index = i;}
+//     }
+//     if(arr[0] == '-')
+//     {
+//         int x = 1;
+//     }
+//     else
+//     {
+//         int k = dec_index - 1;
+//         for(int j = 0; j < dec_index; ++j)
+//         {
+//             num += (double)arr[j] * pow(10, dec_index);
+//             --k;
+//         }
+//         // for(int j = dec_index + 1; j < strlen(arr); ++j)
+//         // {
+//         //     num += (double)arr[j] * pow(10, -(j-dec_index));
+//         // }
+//     }
+//     return num;
+// }
