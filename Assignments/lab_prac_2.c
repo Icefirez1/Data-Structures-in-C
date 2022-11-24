@@ -84,7 +84,7 @@ int main(int argc, char **argv)
     printf("%s, ", concat);
 
 
-    //Question 5
+    // // Question 5
     // Name me = {"Gimelo", "Al", "Pagar"};
     // char* out = concatName(&me);
     // printf("%s\n", out);
@@ -98,32 +98,42 @@ int main(int argc, char **argv)
 }
 
 
+
+//right
 char ** make_str_array(size_t size)
 {
     char ** giving = calloc(size, sizeof(char*));
     return giving;
 }
 
-char ** double_str(char** string_in, size_t size)
+
+//wrong
+char** double_str(char** string_in, size_t size)
 {
+    
     char ** double_arr = realloc(string_in, sizeof(char*)*size*2);
     return double_arr;
 }
 
+//wrong
+//fixed!
 char ** copy_str(char** string_in, size_t size)
 {
     char ** giving = calloc(size, sizeof(char*));
     for(size_t i = 0; i < size; ++i)
     {
-        //strcpy(giving[i], string_in[i]);
-        giving[i] = string_in[i];
+        char * out = malloc(sizeof(char*));
+        strcpy(out, string_in[i]);
+        giving[i] = out;
     }
     return giving;
 }
 
+
+//wrong lol
 char * concat_str(char* string_out, char** arr, size_t size)
 {
-    char* concat;
+    char* concat = malloc(sizeof(char*));
     strcat(concat, string_out);
     for(size_t i = 0; i < size; ++i)
     {
@@ -132,9 +142,12 @@ char * concat_str(char* string_out, char** arr, size_t size)
     return concat;
 }
 
+
+//wrong
 char* concatName(NamePtr x)
 {
-  char* concat;
+  char* concat = malloc(sizeof(char*));
+  // concat = "";
   if(x -> first != NULL)
   {
     strcat(concat, x -> first);

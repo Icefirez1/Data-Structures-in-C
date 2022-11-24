@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 {
 
     //initialize
-    size_t length = 10;
+    size_t length = 11;
     int *arr = random_arr(length);
 
     //unsorted
@@ -104,7 +104,7 @@ int * random_arr(size_t length)
     int * out = calloc(length, sizeof(int));
     for(int i = 0; i < length; ++i)
     {
-        out[i] = rand()%10;
+        out[i] = rand();
     }
     return out;
 }
